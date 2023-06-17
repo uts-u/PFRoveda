@@ -1,0 +1,371 @@
+/* al intentar usar "@mixin" visual studio code me tira un error, estuve leyendo en foros y no pude encontrar ninguna solucion:
+
+Error - 1:28:53 PM] Request textDocument/documentSymbol failed.
+Error: name must not be falsy
+	at b.validate (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:26039)
+	at new b (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:26334)
+	at V (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:218165)
+	at c (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:256165)
+	at t.map (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:256251)
+	at Object.asDocumentSymbols (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:225983)
+	at i (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:164601)
+	at async t.provideDocumentSymbols (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:100:39308)
+[Error - 1:28:53 PM] Request textDocument/documentSymbol failed.
+Error: name must not be falsy
+	at b.validate (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:26039)
+	at new b (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:26334)
+	at V (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:218165)
+	at c (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:256165)
+	at t.map (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:256251)
+	at Object.asDocumentSymbols (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:225983)
+	at i (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/node/cssClientMain.js:1:164601)
+	at async t.provideDocumentSymbols (/private/var/folders/wj/4s0znjyd0897h25t3rht33v40000gn/T/AppTranslocation/75A1C087-4A2B-4438-8CA3-4DB12DBCE4D9/d/Visual Studio Code.app/Contents/Resources/app/out/vs/workbench/api/node/extensionHostProcess.js:100:39308)*/
+@import 'animate.css';
+.foto {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.bioText {
+  text-align: left;
+  padding-bottom: 168px;
+}
+
+.link {
+  color: grey;
+  text-align: center;
+  background: #000000;
+  background: linear-gradient(180deg, black, #606060);
+}
+
+.link img {
+  max-width: 10%;
+}
+
+.fotoContacto {
+  color: grey;
+  text-align: center;
+  background: #000000;
+  background: linear-gradient(180deg, black, #606060);
+}
+
+.contactodiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  grid-template-areas: "fotoContacto link";
+}
+
+.fotoContacto {
+  grid-area: fotoContacto;
+}
+
+.link {
+  grid-area: link;
+}
+
+.fechas {
+  block-size: 633px;
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr 1.6fr;
+  grid-template-rows: 0.3fr 0.3fr 0.2fr 0.2fr 0.2fr 3.5fr;
+  grid-auto-columns: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "Mes Mes Fotovivo" "Fecha Lugar Fotovivo" "f1 l1 Fotovivo" "f2 l2 Fotovivo" "f3 l3 Fotovivo";
+}
+
+.Mes {
+  grid-area: Mes;
+}
+
+.Fecha {
+  grid-area: Fecha;
+}
+
+.Lugar {
+  grid-area: Lugar;
+}
+
+.f1 {
+  grid-area: f1;
+}
+
+.f2 {
+  grid-area: f2;
+}
+
+.f3 {
+  grid-area: f3;
+}
+
+.l1 {
+  grid-area: l1;
+}
+
+.l2 {
+  grid-area: l2;
+}
+
+.l3 {
+  grid-area: l3;
+}
+
+.Fotovivo {
+  padding: 50px;
+  margin-left: 100px;
+  margin-bottom: 500px;
+  grid-area: Fotovivo;
+  max-width: 80%;
+}
+
+.i3 {
+  width: 50px;
+  height: 50px;
+}
+
+.i4 {
+  width: 50px;
+  height: 50px;
+}
+
+.publicacionesDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Publicacion1 Publicacion2" "Publicacion1 Publicacion2";
+}
+
+.Publicacion2 {
+  width: 350px;
+  height: 350px;
+  padding: 50px;
+  padding-bottom: 500px;
+  padding-top: 134px;
+  margin-left: 350px;
+  grid-area: Publicacion2;
+}
+.Publicacion2 :hover {
+  transform: scale(1.2);
+}
+
+.Publicacion1 {
+  width: 350px;
+  height: 350px;
+  padding: 50px;
+  padding-bottom: 500px;
+  padding-top: 134px;
+  margin-left: 350px;
+  grid-area: Publicacion1;
+}
+.Publicacion1 :hover {
+  transform: scale(1.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+header {
+  top: 0;
+  z-index: 1;
+}
+
+footer {
+  background-color: #606060;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+  flex: 1 1 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 55px;
+  color: #606060;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #606060;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: black;
+}
+
+p {
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+  background-color: black;
+}
+
+nav button {
+  background-color: #606060;
+}
+
+#Navegador {
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: right;
+}
+#Navegador a {
+  text-decoration-line: none;
+  text-decoration: none;
+  color: grey;
+}
+#Navegador a:hover {
+  font-weight: bold;
+}
+#Navegador nav button {
+  background-color: #606060;
+}
+
+@media all and (max-width: 1100px) {
+  .bioText {
+    text-align: left;
+    padding-bottom: 107px;
+  }
+  .Fotovivo {
+    display: none;
+    visibility: hidden;
+  }
+  .fechas {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr;
+    grid-template-rows: 0.2fr 0.2fr 0.1fr 0.1fr 0.1fr 5.5fr;
+    grid-auto-columns: 1fr;
+    gap: 50px 50px;
+    grid-auto-flow: row;
+    grid-template-areas: "Mes Mes" "Fecha Lugar" "f1 l1" "f2 l2" "f3 l3";
+  }
+  .publicacionesDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Publicacion1" "Publicacion2";
+  }
+  .Publicacion2 {
+    width: 250px;
+    height: 250px;
+    padding: 40px;
+    margin-bottom: 67px;
+    margin-left: 100px;
+    grid-area: Publicacion2;
+  }
+  .Publicacion2 :hover {
+    transform: scale(1.2);
+  }
+  .Publicacion1 {
+    width: 250px;
+    height: 250px;
+    padding: 40px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    grid-area: Publicacion1;
+  }
+  .Publicacion1 :hover {
+    transform: scale(1.2);
+  }
+  .contactodiv {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    grid-template-areas: "link";
+  }
+  .link {
+    block-size: 630px;
+    color: grey;
+    text-align: center;
+    background: #000000;
+    background: linear-gradient(180deg, black, #606060);
+  }
+  .fotoContacto {
+    display: none;
+    visibility: hidden;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #606060;
+  }
+  p {
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+    background-color: black;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #606060;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: black;
+  }
+  footer {
+    min-width: 100px;
+    background-color: #606060;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+    flex: 1 1 0;
+  }
+  .link img {
+    max-width: 10%;
+  }
+}/*# sourceMappingURL=styles.css.map */

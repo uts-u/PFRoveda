@@ -1,0 +1,18 @@
+.link {color: $color-Terciario; text-align: center;background: #000000;background: linear-gradient(180deg, $color-Principal, $color-Secundario);}
+.link img {max-width: 10%;}
+.fotoContacto {color: $color-Terciario; text-align: center;background: #000000;background: linear-gradient(180deg, $color-Principal, $color-Secundario);}
+.contactodiv {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    grid-template-areas:
+      "fotoContacto link";
+  }
+  
+  .fotoContacto { grid-area: fotoContacto; }
+  
+  .link { grid-area: link; }
+  
