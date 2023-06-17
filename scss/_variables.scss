@@ -2,7 +2,9 @@ $color-Principal: black;
 $color-Secundario: #606060;
 $color-Terciario: grey;
 
-/* al intentar usar "@mixin" visual studio code me tira un error, estuve leyendo en foros y no pude encontrar ninguna solucion:
+/* al intentar usar "@mixin" visual studio code me tira un error, estuve leyendo en foros y no pude encontrar ninguna solucion, hay gente que recomienda desinstalar y volver a instalar el vsc.
+en ese caso quizas no llegaría a cumplir con los lapsos de la entrega, teniendo en cuenta que posiblemente tenga que instalar otra vez git, sass, etc. El concepto y la funcion mixin la entendi y la podria haber aplicado pero bueno, por las dudas esta aclaración.
+Acá comparto el mensaje que me devuelve la terminal:
  
 Error - 1:28:53 PM] Request textDocument/documentSymbol failed.
 Error: name must not be falsy
